@@ -1,0 +1,320 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f9; /* Cor lilás clara */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção de introdução (nome e foto) */
+.intro-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    color: #9b66e6; /* Cor lilás */
+    margin-bottom: 20px;
+}
+
+/* Foto circular */
+.profile-photo {
+    width: 180px;  /* Largura da foto (também será a altura) */
+    height: 180px; /* Altura da foto (igual à largura para ser redonda) */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem (corta se necessário) */
+    border-radius: 50%; /* Torna a foto redonda */
+    border: 5px solid #9b66e6; /* Borda lilás ao redor da foto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover para aumentar a foto */
+.profile-photo:hover {
+    transform: scale(1.1); /* Aumenta a foto 10% quando o mouse passa sobre ela */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.profile-photo {
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #9b66e6; /* Borda lilás */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o botão "Saiba mais sobre mim" */
+.show-more-btn {
+    background-color: #9b66e6; /* Cor lilás */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.show-more-btn:hover {
+    background-color: #7a4fb5; /* Cor lilás mais escura ao passar o mouse */
+}
+
+/* Estilos para o texto sobre mim */
+.about-text {
+    display: none; /* Inicialmente o texto está oculto */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Seção de Certificados */
+.certificates-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.certificates {
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro */
+    gap: 20px; /* Espaçamento entre os certificados */
+    flex-wrap: wrap; /* Permite que os certificados quebrem linha em telas pequenas */
+}
+
+.certificate {
+    flex: 1 1 200px; /* Flexível, com mínimo de 200px de largura */
+    max-width: 250px; /* Máximo de 250px de largura por item */
+    margin: 0 auto; /* Centraliza cada item dentro do flex */
+}
+
+.certificate img {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do seu container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px
+}
+
+
+
+.certificates-section h2 {
+    color: #9b66e6; /* Cor lilás para o título */
+    margin-bottom: 20px;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certificate img:hover {
+    transform: scale(1.05); /* Efeito de zoom quando passar o mouse */
+}
+
+
+/* Estilo para a logo do Instagram */
+.instagram-link {
+    margin-top: 20px;
+}
+
+.logo-image {
+    width: 250px;  /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(2.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f9; /* Cor lilás clara */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção de introdução (nome e foto) */
+.intro-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    color: #9b66e6; /* Cor lilás */
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #9b66e6; /* Borda lilás */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de certificados */
+.certificates-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.certificates-section h2 {
+    color: #9b66e6;
+    margin-bottom: 20px;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #9b66e6; /* Borda lilás nas fotos de certificados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certificate img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Galeria de Fotos */
+.gallery-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery-section h2 {
+    color: #9b66e6;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px;
+    justify-items: center; /* Alinha as fotos ao centro */
+    margin-bottom: 30px;
+}
+
+.photo img {
+    width: 250px; /* Ajuste do tamanho das fotos */
+    height: 250px; /* Ajuste da altura das fotos */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 8px;
+    border: 2px solid #9b66e6; /* Borda lilás nas fotos da galeria */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para a logo do Instagram */
+.instagram-link {
+    margin-top: 20px;
+}
+
+.logo-image {
+    width: 100px;  /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px; /* Borda arredondada para a logo */
+    border: 2px solid #9b66e6; /* Borda lilás na logo */
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* Efeito de zoom suave para a logo */
+}
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f9; /* Cor lilás clara */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção de introdução (nome e foto) */
+.intro-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Container para foto e nome */
+.profile-container {
+    display: flex; /* Flexbox para alinhar foto e nome */
+    justify-content: flex-start; /* Alinha os itens no início */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 30px; /* Espaçamento entre a foto e o nome */
+}
+
+/* Foto da pessoa */
+.profile-photo {
+    width: 180px; /* Aumentando o tamanho da foto */
+    height: 180px;
+    border-radius: 50%; /* Tornando a foto redonda */
+    border: 5px solid #9b66e6; /* Borda lilás */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nome da pessoa */
+h1 {
+    font-size: 50px; /* Tamanho do nome */
+    color: #9b66e6; /* Cor lilás */
+    font-weight: bold;
+}

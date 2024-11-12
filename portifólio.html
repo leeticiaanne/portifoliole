@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção de Foto Pessoal e Nome -->
+        <section class="intro-section">
+            <div class="profile-container">
+                <img src="img/fotominha3.jpeg" alt="Foto pessoal" class="profile-photo">
+                <h1>Letícia Anne</h1>
+            </div>
+        </section>
+   
+           <!-- Botão para mostrar mais sobre mim -->
+        <section class="about-section">
+            <button class="show-more-btn" id="showMoreBtn">Saiba mais sobre mim</button>
+            <div class="about-text" id="aboutText">
+                <p>Olá, meu nome é Letícia Anne, tenho 16 anos e sou uma menina apaixonada pelo universo da estética. Desde os 12 anos, me encantei pelo cuidado das unhas e, com o tempo, fui me aprofundando cada vez mais nessa área. Comecei atendendo clientes a domicílio e, hoje, tenho o privilégio de trabalhar no meu próprio salão. O espaço em que estou agora é muito maior e mais moderno do que o pequeno salão onde tudo começou, um grande passo na minha trajetória profissional.</p>
+                <p>Além das unhas, também me dedico ao trabalho com cílios. Recentemente, em 2024, fiz o curso de extensão de cílios e me apaixonei ainda mais por essa arte. Também fiz o curso de alongamento de unhas em 2022, que me ajudou a aprimorar minha técnica e expandir meus serviços, sempre com o objetivo de proporcionar o melhor resultado para minhas clientes.</p>
+                <p>Embora minha paixão seja a estética, também me envolvo com a Tecnologia da Informação (TI), um campo que lida com soluções e sistemas que podem transformar negócios. A tecnologia tem me ajudado a otimizar o funcionamento do meu salão e a gestão do meu trabalho, trazendo ainda mais eficiência ao que faço.</p>
+                <p>Atualmente, estudo no Colégio SESI e faço curso técnico no SENAI, buscando sempre me atualizar e evoluir em diversas áreas, para oferecer o melhor tanto para minhas clientes quanto para meu desenvolvimento pessoal e profissional.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Certificados -->
+        <section class="certificates-section">
+            <h2>Meus Certificados</h2>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="img/certificadocilios.jpeg" alt="Certificado 1">
+                </div>
+                <div class="certificate">
+                    <img src="img/certificadounha.jpeg" alt="Certificado 2">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Aqui começa o código JavaScript -->
+    <script>
+        document.getElementById('showMoreBtn').addEventListener('click', function() {
+            var aboutText = document.getElementById('aboutText');
+            var button = document.getElementById('showMoreBtn');
+
+            if (aboutText.style.display === 'none' || aboutText.style.display === '') {
+                aboutText.style.display = 'block'; // Exibe o texto
+                button.textContent = 'Leia menos sobre mim'; // Muda o texto do botão
+            } else {
+                aboutText.style.display = 'none'; // Oculta o texto
+                button.textContent = 'Saiba mais sobre mim'; // Restaura o texto do botão
+            }
+        });
+    </script>
+
+        <!-- Seção de Fotos e Logo com Link para Instagram -->
+        <section class="gallery-section">
+            <h2>Veja mais um pouco do meu trabalho</h2>
+            <div class="gallery">
+                <div class="photo"><img src="img/cilios1.jpeg" alt="Foto 1"></div>
+                <div class="photo"><img src="img/cilios2.jpeg" alt="Foto 2"></div>
+                <div class="photo"><img src="img/cilios3.jpeg" alt="Foto 3"></div>
+                <div class="photo"><img src="img/unha1.jpeg" alt="Foto 4"></div>
+                <div class="photo"><img src="img/unha2.jpeg" alt="Foto 5"></div>
+                <div class="photo"><img src="img/unha3.jpeg" alt="Foto 6"></div>
+            </div>
+            <!-- Logo com Link para Instagram -->
+            <!-- Logo com Link para Instagram e sinalização -->
+    <div class="instagram-link">
+        <a href="https://www.instagram.com/studioannee_?igsh=bnFqZ21xbXdld2R4" target="_blank">
+            <img src="img/logosalao.jpeg" alt="Logo Instagram" class="logo-image">
+        </a>
+        <p class="instagram-text">Clique na logo para ver meu Instagram</p>
+    </div>
+</section>
+        </section>
+    </div>
+</body>
+</html>
